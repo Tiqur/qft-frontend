@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import HamburgerMenu from 'react-hamburger-menu';
 import React, { useEffect, useState } from 'react';
 import usePortal from 'react-useportal';
+import Layout from '../../components/Layout/Layout.jsx';
 
 
 const NavLink = (props) => {
@@ -47,44 +48,46 @@ const NavBar = () => {
   </>
 
   return (
-    <div className={styles.container}>
+    <Layout>
+      <div className={styles.container}>
 
-      { /* Side Menu */ }
-      {hamburgerOpen && 
-        <Portal className={styles.sideMenu}>
-          <SideBar setHamburgerOpen={setHamburgerOpen}>
+        { /* Side Menu */ }
+        {hamburgerOpen && 
+          <Portal className={styles.sideMenu}>
+            <SideBar setHamburgerOpen={setHamburgerOpen}>
+              {links}
+            </SideBar>
+          </Portal>
+        }
+
+        { /* Logo */ }
+        <img src={logo} className={styles.logo}/>
+        
+        { /* Nav Buttons */ }
+        <div className={styles.content}>
+          <div className={styles.ticker}>
+            <Text>Current Price:</Text>
+            <Text size='1' color='grey'>$0.000012</Text>
+            <Text size='1.2' color='green'>+0.5%</Text>
+          </div>
+   
+
+          { /* Top nav links */ }
+          <div className={styles.links}>
             {links}
-          </SideBar>
-        </Portal>
-      }
+          </div>
 
-      { /* Logo */ }
-      <img src={logo} className={styles.logo}/>
-      
-      { /* Nav Buttons */ }
-      <div className={styles.content}>
-        <div className={styles.ticker}>
-          <Text>Current Price:</Text>
-          <Text size='1' color='grey'>$0.000012</Text>
-          <Text size='1.2' color='green'>+0.5%</Text>
+          <HamburgerMenu
+          isOpen={hamburgerOpen}
+          color='#C1C1C1'
+          strokeWidth={3}
+          className={styles.hamburger}
+          menuClicked={() => {setHamburgerOpen(!hamburgerOpen)}}/>
+
         </div>
- 
-
-        { /* Top nav links */ }
-        <div className={styles.links}>
-          {links}
-        </div>
-
-        <HamburgerMenu
-        isOpen={hamburgerOpen}
-        color='#C1C1C1'
-        strokeWidth={3}
-        className={styles.hamburger}
-        menuClicked={() => {setHamburgerOpen(!hamburgerOpen)}}/>
 
       </div>
-
-    </div>
+    </Layout>
   )
 }
 
