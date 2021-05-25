@@ -1,8 +1,12 @@
 import styles from './styles.module.css';
+import NavBar from '../../components/NavBar/NavBar.jsx';
 
 const HomePage = () => {
   return (
-    <p>HomePage</p>
+    <div className={styles.mainContainer}>
+      <NavBar/>
+      <p>HomePage</p>
+    </div>
   )
 }
 
