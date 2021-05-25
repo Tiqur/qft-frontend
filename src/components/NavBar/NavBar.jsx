@@ -2,6 +2,7 @@ import styles from './styles.module.css';
 import logo from '../../assets/queef.jpg';
 import Text from '../Text/Text.jsx';
 import { Link } from 'react-router-dom';
+import HamburgerMenu from 'react-hamburger-menu';
 
 
 const NavLink = (props) => {
