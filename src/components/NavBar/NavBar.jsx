@@ -29,14 +29,6 @@ const NavBar = () => {
           <Text size='1' color='grey'>$0.000012</Text>
           <Text size='1.2' color='green'>+0.5%</Text>
         </div>
-
-        <HamburgerMenu 
-          color='white'
-          className={styles.hamburger}
-          isOpen={hamburgerOpen}
-          menuClicked={() => {setHamburgerOpen(!hamburgerOpen)}}
-          strokeWidth={3}
-          />
         
         <div className={styles.links}>
           <NavLink to='#'>How to buy</NavLink>
@@ -45,6 +37,14 @@ const NavBar = () => {
           <NavLink to='#'>WhitePaper</NavLink>
           <NavLink to='#'>Telegram</NavLink>
         </div>
+
+        <HamburgerMenu 
+          color='white'
+          className={styles.hamburger}
+          isOpen={hamburgerOpen}
+          menuClicked={() => {setHamburgerOpen(!hamburgerOpen)}}
+          strokeWidth={3}
+          />
       </div>
     </div>
   )
