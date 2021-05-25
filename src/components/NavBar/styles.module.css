@@ -51,3 +51,16 @@
   outline-width: thin;
   color: #51DFE0;
 }
+
+
+@media(min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media(max-width: 900px) {
+  .navLinkDiv {
+    display: none;
+  }
+}
