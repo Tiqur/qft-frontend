@@ -12,7 +12,7 @@
 
 .ticker {
   display: flex;
-  align-content: center;
+  align-items: center;
   margin-left: 2em;
 }
 
@@ -59,8 +59,39 @@
   }
 }
 
-@media(max-width: 900px) {
+@media(max-width: 899px) {
   .navLinkDiv {
     display: none;
   }
+
+  .ticker {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sideMenu {
+    display: none;
+  }
+}
+
+.sideMenu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  position: absolute;
+  height: 100vh;
+  width: 25em;
+  background: #21212E;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
 }

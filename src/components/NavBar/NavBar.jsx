@@ -4,6 +4,7 @@ import Text from '../Text/Text.jsx';
 import { Link } from 'react-router-dom';
 import HamburgerMenu from 'react-hamburger-menu';
 import React, { useEffect, useState } from 'react';
+import usePortal from 'react-useportal';
 
 
 const NavLink = (props) => {
@@ -18,11 +19,28 @@ const NavLink = (props) => {
 
 const NavBar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const { Portal } = usePortal({
+    bindTo: document.getElementById('root')
+  })
 
 
   return (
     <div className={styles.container}>
+      <Portal>
+        <div className={styles.sideMenu}>
+          <div className={styles.menu}>
+
+          </div>
+          <div className={styles.overlay}>
+
+          </div>
+        </div>
+      </Portal>
+
+      { /* Logo */ }
       <img src={logo} className={styles.logo}/>
+      
+      { /* Nav Buttons */ }
       <div className={styles.content}>
         <div className={styles.ticker}>
           <Text>Current Price:</Text>
@@ -34,18 +52,19 @@ const NavBar = () => {
           <NavLink to='#'>How to buy</NavLink>
           <NavLink to='#'>About</NavLink>
           <NavLink to='#'>Charts</NavLink>
-          <NavLink to='#'>WhitePaper</NavLink>
           <NavLink to='#'>Telegram</NavLink>
+          <NavLink to='#'>WhitePaper</NavLink>
         </div>
 
-        <HamburgerMenu 
-          color='white'
-          className={styles.hamburger}
-          isOpen={hamburgerOpen}
-          menuClicked={() => {setHamburgerOpen(!hamburgerOpen)}}
-          strokeWidth={3}
-          />
+        <HamburgerMenu
+        isOpen={hamburgerOpen}
+        color='#C1C1C1'
+        strokeWidth={3}
+        className={styles.hamburger}
+        menuClicked={() => {setHamburgerOpen(!hamburgerOpen)}}/>
+
       </div>
+
     </div>
   )
 }
