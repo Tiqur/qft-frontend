@@ -25,6 +25,9 @@ const NavBar = () => {
           <Text size='1' color='grey'>$0.000012</Text>
           <Text size='1.2' color='green'>+0.5%</Text>
         </div>
+
+        <HamburgerMenu className={styles.hamburger} />
+        
         <div className={styles.links}>
           <NavLink to='#'>How to buy</NavLink>
           <NavLink to='#'>About</NavLink>
