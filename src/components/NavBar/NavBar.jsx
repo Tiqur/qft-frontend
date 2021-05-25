@@ -24,31 +24,39 @@ const SideBar = (props) => {
       <div className={styles.menu}>
         {props.children}
       </div>
-      <div className={styles.overlay}/>
+      <div className={styles.overlay} onClick={() => {props.setHamburgerOpen(false)}}/>
     </div>
   )
 }
 
 const NavBar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+    
+  // Create portal to root otherwise will not fill full height
   const { Portal } = usePortal({
     bindTo: document.getElementById('root')
   })
 
 
+  const links = <>
+    <NavLink to='#'>How to buy</NavLink>
+    <NavLink to='#'>About</NavLink>
+    <NavLink to='#'>Charts</NavLink>
+    <NavLink to='#'>Telegram</NavLink>
+    <NavLink to='#'>WhitePaper</NavLink>
+  </>
+
   return (
     <div className={styles.container}>
 
       { /* Side Menu */ }
-      <Portal className={styles.sideMenu}>
-        <SideBar>
-          <NavLink to='#'>How to buy</NavLink>
-          <NavLink to='#'>About</NavLink>
-          <NavLink to='#'>Charts</NavLink>
-          <NavLink to='#'>Telegram</NavLink>
-          <NavLink to='#'>WhitePaper</NavLink>
-        </SideBar>
-      </Portal>
+      {hamburgerOpen && 
+        <Portal className={styles.sideMenu}>
+          <SideBar setHamburgerOpen={setHamburgerOpen}>
+            {links}
+          </SideBar>
+        </Portal>
+      }
 
       { /* Logo */ }
       <img src={logo} className={styles.logo}/>
@@ -60,13 +68,11 @@ const NavBar = () => {
           <Text size='1' color='grey'>$0.000012</Text>
           <Text size='1.2' color='green'>+0.5%</Text>
         </div>
-        
+ 
+
+        { /* Top nav links */ }
         <div className={styles.links}>
-          <NavLink to='#'>How to buy</NavLink>
-          <NavLink to='#'>About</NavLink>
-          <NavLink to='#'>Charts</NavLink>
-          <NavLink to='#'>Telegram</NavLink>
-          <NavLink to='#'>WhitePaper</NavLink>
+          {links}
         </div>
 
         <HamburgerMenu

@@ -10,6 +10,8 @@
   border-radius: 50%;
 }
 
+
+/* Nav Bar */
 .ticker {
   display: flex;
   align-items: center;
@@ -52,6 +54,31 @@
   color: #51DFE0;
 }
 
+
+/* Side Menu */
+.sideMenu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.menu {
+  position: absolute;
+  height: 100vh;
+  width: 25em;
+  background: #21212E;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Media Queries */
 @media(min-width: 900px) {
   .hamburger {
     display: none;
@@ -78,25 +105,4 @@
   }
 }
 
-.sideMenu {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-}
-
-.menu {
-  position: absolute;
-  height: 100vh;
-  width: 25em;
-  background: #21212E;
-}
-
-.overlay {
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-}
 
