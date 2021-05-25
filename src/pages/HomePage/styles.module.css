@@ -1,0 +1,8 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeContainer {
+  width: 100%;
+}
