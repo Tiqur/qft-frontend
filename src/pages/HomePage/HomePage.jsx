@@ -2,7 +2,10 @@ import styles from './styles.module.css';
 import NavBar from '../../components/NavBar/NavBar.jsx';
 import Text from '../../components/Text/Text.jsx';
 import { ReactComponent as Arrow } from '../../assets/arrow.svg';
-import Button from '../../components/Button/Button.jsx';
+import { makeStyles } from '@material-ui/core/styles';
+import { Button, Box } from '@material-ui/core';
+
+
 
 const HomePage = () => {
   
@@ -37,8 +40,12 @@ const HomePage = () => {
             height: '0.7em',
             transform: 'rotate(90deg)'
           }} />}</Text>
+
+        <Box display='flex' flexDirection="row">
+          <Button color='secondary' variant='outlined'>View Charts</Button>
+          <Button color='primary' variant='contained'>Buy Now</Button>
+        </Box>
         </div>
-        <Button color='#21212E' padding='10px'  background='#51DFE0' text='Buy now'/>
 
       </div>
 
