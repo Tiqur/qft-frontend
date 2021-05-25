@@ -8,7 +8,6 @@
 .logo {
   width: 5em;
   border-radius: 50%;
-  margin-left: 1em;
 }
 
 .ticker {
@@ -25,4 +24,30 @@
 
 .links {
   display: flex;
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.navLinkDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  height: 1em;
+  border-radius: 16px;
+  margin: 0.5em;
+}
+
+.navLinkDiv:hover {
+  transition-duration: 400ms;
+  background: #303047;
+  cursor: pointer;
+}
+
+.navLinkDiv:last-child {
+  outline: solid;
+  outline-width: thin;
+  color: #51DFE0;
 }
