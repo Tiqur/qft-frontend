@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import HamburgerMenu from 'react-hamburger-menu';
 import React, { useEffect, useState } from 'react';
 import usePortal from 'react-useportal';
-import Layout from '../../components/Layout/Layout.jsx';
+import Layout from '../Layout/Layout.jsx';
 
 
 const NavLink = (props) => {
@@ -32,7 +32,17 @@ const SideBar = (props) => {
 
 const NavBar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-    
+  const [scrollPos, setScrollPos] = useState(0);
+  
+  // Update scroll pos
+  useEffect(() => {
+      window.addEventListener('scroll', () => {setScrollPos(window.pageYOffset)}, { passive: true });
+
+      return () => {
+          window.removeEventListener('scroll', () => {setScrollPos(window.pageYOffset)});
+      };
+  }, []);
+  
   // Create portal to root otherwise will not fill full height
   const { Portal } = usePortal({
     bindTo: document.getElementById('root')
@@ -48,9 +58,8 @@ const NavBar = () => {
   </>
 
   return (
-    <Layout>
-      <div className={styles.container}>
-
+    <div className={scrollPos == 0 ? styles.container : styles.containerScrolled}>
+      <div className={styles.innerContainer}>
         { /* Side Menu */ }
         {hamburgerOpen && 
           <Portal className={styles.sideMenu}>
@@ -61,7 +70,7 @@ const NavBar = () => {
         }
 
         { /* Logo */ }
-        <img src={logo} className={styles.logo}/>
+        <img src={logo} className={scrollPos == 0 ? styles.logo : styles.logoScrolled}/>
         
         { /* Nav Buttons */ }
         <div className={styles.content}>
@@ -84,10 +93,10 @@ const NavBar = () => {
           className={styles.hamburger}
           menuClicked={() => {setHamburgerOpen(!hamburgerOpen)}}/>
 
-        </div>
-
+       </div>
       </div>
-    </Layout>
+
+    </div>
   )
 }
 

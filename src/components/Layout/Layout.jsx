@@ -21,7 +21,7 @@ const Layout = (props) => {
 
   return (
     <div className={styles.container}>
-      <div style={{width: window.innerWidth - 50, height: window.innerHeight}}>
+      <div style={{width: window.innerWidth - 50}}>
         {props.children}
       </div>
     </div>
