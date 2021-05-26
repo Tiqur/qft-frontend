@@ -76,7 +76,7 @@ const NavBar = () => {
         <div className={styles.content}>
           <div className={styles.ticker}>
             <Text>Current Price:</Text>
-            <Text size='1' color='grey'>$0.000012</Text>
+            <Text size='1.2' color='grey'>$0.000012</Text>
             <Text size='1.2' color='green'>+0.5%</Text>
           </div>
    
