@@ -3,11 +3,25 @@ import NavBar from '../../components/NavBar/NavBar.jsx';
 import Text from '../../components/Text/Text.jsx';
 import { ReactComponent as Arrow } from '../../assets/arrow.svg';
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, Box } from '@material-ui/core';
+import { Box } from '@material-ui/core';
+import Button from '../../components/Button.jsx';
+import { useState } from 'react';
+import Layout from '../../components/Layout/Layout.jsx';
 
+const Section = (props) => {
+  console.log(props.class)
+  return (
+    <div className={props.class}>
+      <Layout>
+        {props.children}
+      </Layout>
+    </div>
+  )
+}
 
 
 const HomePage = () => {
+  const [arrowState, setArrowState] = useState(false);
   
   const clouds = <>
       <div className={styles.x1}>
@@ -34,21 +48,39 @@ const HomePage = () => {
       </div>
 
       { /* Hero Container */ }     
-      <div className={styles.homeContainer}>
+      <Section class={styles.homeContainer}>
         <div className={styles.heroInfo}>
-          <Text size={6} className={styles.heroTitle}>QUEEF {<Arrow fill='#51DFE0' style={{
+          <Text size={6} className={styles.heroTitle}>QUEEF {<Arrow className={styles.arrow} fill='#51DFE0' style={{
             height: '0.7em',
-            transform: 'rotate(90deg)'
-          }} />}</Text>
+            transition: '300ms',
+            transform: arrowState ? 'rotate(90deg)' : 'rotate(270deg)'
+          }} onClick={() => {
+            setArrowState(!arrowState);
+          }}/>}</Text>
 
-        <Box display='flex' flexDirection="row">
-          <Button color='secondary' variant='outlined'>View Charts</Button>
-          <Button color='primary' variant='contained'>Buy Now</Button>
-        </Box>
+          <Box mt={2} display='flex' flexDirection="row">
+            <Button color='secondary' variant='outlined'>View Charts</Button>
+            <Button ml={2} color='primary' variant='contained'>Buy Now</Button>
+          </Box>
         </div>
+      </Section>
+      
 
-      </div>
+      { /* About Section */ }
+      <Section class={styles.aboutContainer}>
+      </Section>
+    
+      { /* Info Section */ }
+      <Section class={styles.infoContainer}>
+      </Section>
 
+      { /* Graph Section */ }
+      <Section class={styles.graphContainer}>
+      </Section>
+
+      { /* Footer Section */ }
+      <Section class={styles.footerContainer}>
+      </Section>
     </div>
   )
 }
