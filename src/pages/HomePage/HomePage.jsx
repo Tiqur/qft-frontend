@@ -1,4 +1,6 @@
 import { ReactComponent as Arrow } from '../../assets/arrow.svg';
+import { ReactComponent as Money } from '../../assets/money.svg';
+import { ReactComponent as Drop } from '../../assets/drop.svg';
 import { makeStyles } from '@material-ui/core/styles';
 import { useState } from 'react';
 import { Box } from '@material-ui/core';
@@ -10,13 +12,22 @@ import Layout from '../../components/Layout/Layout.jsx';
 import FadeIn from 'react-fade-in';
 
 const Section = (props) => {
-  console.log(props.class)
   return (
     <div className={props.class}>
       <Layout>
         {props.children}
       </Layout>
     </div>
+  )
+}
+
+
+const IconContainer = (props) => {
+  return (
+    <Box display='flex' flexDirection='column'>
+      <props.icon className={styles.icon}/>
+      {props.children}     
+    </Box>
   )
 }
 
@@ -71,11 +82,11 @@ const HomePage = () => {
           { /* Fade in Acronym */ }
           <div style={{display: arrowState ? 'initial' : 'none'}}>
             <FadeIn visible={arrowState}>
-              <Text>Queens</Text>
-              <Text>United</Text>
-              <Text>Educated</Text>
-              <Text>E</Text>
-              <Text>F</Text>
+              <Text color='#A9A9A9'>Queens</Text>
+              <Text color='#A9A9A9'>United</Text>
+              <Text color='#A9A9A9'>Educated</Text>
+              <Text color='#A9A9A9'>E</Text>
+              <Text color='#A9A9A9'>F</Text>
             </FadeIn>
           </div>
 
@@ -93,15 +104,17 @@ const HomePage = () => {
         <Text color='grey' size='2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
       </Section>
     
-      { /* Info Section */ }
-      <Section class={styles.infoContainer}>
-        <Box display='flex'>
-          
+      { /* Graph Section */ }
+      <Section class={styles.section}>
+        <Box justifyContent='space-around' display='flex'>
+          <IconContainer icon={Money}>Market Cap</IconContainer>
+          <IconContainer icon={Drop}>Liquidity</IconContainer>
+          <IconContainer icon={Drop}></IconContainer>
         </Box>
       </Section>
 
       { /* Graph Section */ }
-      <Section class={styles.graphContainer}>
+      <Section class={styles.section}>
       </Section>
 
       { /* Footer Section */ }
