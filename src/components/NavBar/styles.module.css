@@ -7,9 +7,9 @@
 }
 
 .innerContainer {
-    display: flex;
-    align-items: center;
-    width: calc(100% - 50px);
+  display: flex;
+  align-items: center;
+  width: calc(100% - 50px);
 }
 
 .containerScrolled {

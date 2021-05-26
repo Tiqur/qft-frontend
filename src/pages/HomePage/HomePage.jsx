@@ -1,12 +1,13 @@
+import { ReactComponent as Arrow } from '../../assets/arrow.svg';
+import { makeStyles } from '@material-ui/core/styles';
+import { useState } from 'react';
+import { Box } from '@material-ui/core';
 import styles from './styles.module.css';
 import NavBar from '../../components/NavBar/NavBar.jsx';
 import Text from '../../components/Text/Text.jsx';
-import { ReactComponent as Arrow } from '../../assets/arrow.svg';
-import { makeStyles } from '@material-ui/core/styles';
-import { Box } from '@material-ui/core';
 import Button from '../../components/Button.jsx';
-import { useState } from 'react';
 import Layout from '../../components/Layout/Layout.jsx';
+import FadeIn from 'react-fade-in';
 
 const Section = (props) => {
   console.log(props.class)
@@ -61,11 +62,22 @@ const HomePage = () => {
         <div className={styles.heroInfo}>
           <Text size={6} className={styles.heroTitle}>QUEEF {<Arrow className={styles.arrow} fill='#51DFE0' style={{
             height: '0.7em',
-            transition: '300ms',
+            transition: '200ms',
             transform: arrowState ? 'rotate(90deg)' : 'rotate(270deg)'
           }} onClick={() => {
             setArrowState(!arrowState);
           }}/>}</Text>
+      
+          { /* Fade in Acronym */ }
+          <div style={{display: arrowState ? 'initial' : 'none'}}>
+            <FadeIn visible={arrowState}>
+              <Text>Queens</Text>
+              <Text>United</Text>
+              <Text>Educated</Text>
+              <Text>E</Text>
+              <Text>F</Text>
+            </FadeIn>
+          </div>
 
           <Box mt={2} display='flex' flexDirection="row">
             <Button color='secondary' variant='outlined'>View Charts</Button>
