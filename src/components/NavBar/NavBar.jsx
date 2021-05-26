@@ -28,10 +28,10 @@ const NavLink = (props) => {
 const SideBar = (props) => {
   return (
     <div className={styles.sideMenu}>
+      <div className={styles.overlay} onClick={() => {props.setHamburgerOpen(false)}}/>
       <div className={styles.menu}>
         {props.children}
       </div>
-      <div className={styles.overlay} onClick={() => {props.setHamburgerOpen(false)}}/>
     </div>
   )
 }
@@ -40,9 +40,17 @@ const NavBar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [scrollPos, setScrollPos] = useState(0);
   
+  const scrollHandle = () => {
+    if (window.innerWidth <= 899) {
+      setScrollPos(false)
+    } else {
+     setScrollPos(window.pageYOffset)
+    }
+  }
+  
   // Update scroll pos
   useEffect(() => {
-      window.addEventListener('scroll', () => {setScrollPos(window.pageYOffset)}, { passive: true });
+      window.addEventListener('scroll', scrollHandle, { passive: true });
 
       return () => {
           window.removeEventListener('scroll', () => {setScrollPos(window.pageYOffset)});

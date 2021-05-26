@@ -115,15 +115,7 @@ const HomePage = () => {
         </Box>
       </Section>
 
-      { /* Video Embed Section */ }
-      <Section class={styles.section}>
-        <div className={styles.videoContainer}>
-        </div>
-      </Section>
 
-      { /* Graph Section */ }
-      <Section class={styles.section}>
-      </Section>
 
       { /* Footer Section */ }
       <Section class={styles.footerContainer}>
