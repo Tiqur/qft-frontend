@@ -91,8 +91,8 @@ const HomePage = () => {
           </div>
 
           <Box mt={2} display='flex' flexDirection="row">
-            <Button color='secondary' variant='outlined'>View Charts</Button>
-            <Button ml={2} color='primary' variant='contained'>Buy Now</Button>
+            <Button disableRipple color='secondary' variant='outlined'>View Charts</Button>
+            <Button disableRipple ml={2} color='primary' variant='contained'>Buy Now</Button>
           </Box>
         </div>
       </Section>

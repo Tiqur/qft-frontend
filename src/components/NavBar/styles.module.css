@@ -55,10 +55,6 @@
   display: flex;
 }
 
-.navLink {
-  text-decoration: none;
-}
-
 .navLinkDiv {
   display: flex;
   flex-direction: column;
@@ -67,18 +63,6 @@
   height: 1em;
   border-radius: 16px;
   margin: 0.5em;
-}
-
-.navLinkDiv:hover {
-  transition-duration: 400ms;
-  background: #303047;
-  cursor: pointer;
-}
-
-.navLinkDiv:last-child {
-  outline: solid;
-  outline-width: thin;
-  color: #51DFE0;
 }
 
 

@@ -1,10 +1,10 @@
 import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
-  typeography: {
-    allVariants: {
-      color: '#FFFFFF'
-    }
+  typography: {
+    button: {
+      textTransform: 'none'
+    },
   },
 
   palette: {

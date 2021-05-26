@@ -1,4 +1,5 @@
 import styles from './styles.module.css';
+import Button from '../../components/Button.jsx';
 import logo from '../../assets/queef.jpg';
 import Text from '../Text/Text.jsx';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,13 @@ import Layout from '../Layout/Layout.jsx';
 const NavLink = (props) => {
   return (
     <div className={styles.navLinkDiv}>
-      <Link to={{pathname: props.to}} className={styles.navLink}>
-        <Text>{props.children}</Text>
+      <Link to={{pathname: props.to}}>
+        <Button 
+          p={1}
+          disableRipple
+          variant={props.outlined ? 'outlined' : 'text'} 
+          size={props.scrollPos == 0 ? 'large' : 'small'}
+          color='secondary'>{props.text}</Button>
       </Link>
     </div>
   )
@@ -50,11 +56,11 @@ const NavBar = () => {
 
 
   const links = <>
-    <NavLink to='#'>How to buy</NavLink>
-    <NavLink to='#'>About</NavLink>
-    <NavLink to='#'>Charts</NavLink>
-    <NavLink to='#'>Telegram</NavLink>
-    <NavLink to='#'>WhitePaper</NavLink>
+    <NavLink scrollPos={scrollPos} to='#' text='How to buy'/>
+    <NavLink scrollPos={scrollPos} to='#' text='About'/>
+    <NavLink scrollPos={scrollPos} to='#' text='Charts'/>
+    <NavLink scrollPos={scrollPos} to='#' text='Telegram'/>
+    <NavLink scrollPos={scrollPos} outlined to='#' text='WhitePaper'/>
   </>
 
   return (
