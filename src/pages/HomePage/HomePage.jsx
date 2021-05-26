@@ -36,6 +36,15 @@ const HomePage = () => {
       <div className={styles.x4}>
           <div className={styles.cloud}></div>
       </div>
+      <div className={styles.x5}>
+          <div className={styles.cloud}></div>
+      </div>
+      <div className={styles.x6}>
+          <div className={styles.cloud}></div>
+      </div>
+      <div className={styles.x7}>
+          <div className={styles.cloud}></div>
+      </div>
   </>
 
   return (
