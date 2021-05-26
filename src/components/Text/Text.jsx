@@ -7,7 +7,8 @@ const Text = (props) => {
       color: props.color ? props.color : 'white',
       fontWeight: props.weight ? props.weight : 'initial',
       fontSize: (props.size ? props.size : 'initial') + 'ch',
-      fontFamily: props.family ? props.family: 'Roboto',
+      fontFamily: props.family ? props.family : 'Roboto',
+      padding: props.padding ? props.padding : 'initial'
     }}children={props.children}/>
   )
 }
