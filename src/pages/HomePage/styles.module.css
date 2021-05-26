@@ -44,7 +44,9 @@
 
 /* Svg Icon */
 .icon {
-  height: 10em
+  height: 10em;
+  width: 10em;
+  margin-bottom: 1em;
 }
 
 

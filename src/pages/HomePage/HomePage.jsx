@@ -1,6 +1,7 @@
 import { ReactComponent as Arrow } from '../../assets/arrow.svg';
 import { ReactComponent as Money } from '../../assets/money.svg';
 import { ReactComponent as Drop } from '../../assets/drop.svg';
+import { ReactComponent as Vault } from '../../assets/vault.svg';
 import { makeStyles } from '@material-ui/core/styles';
 import { useState } from 'react';
 import { Box } from '@material-ui/core';
@@ -24,9 +25,10 @@ const Section = (props) => {
 
 const IconContainer = (props) => {
   return (
-    <Box display='flex' flexDirection='column'>
-      <props.icon className={styles.icon}/>
-      {props.children}     
+    <Box display='flex' flexDirection='column' alignItems='center'>
+      <props.icon fill='#51DFE0' className={styles.icon}/>
+      <Text size='3'>{props.info}</Text>
+      <Text color='grey' size='2'>{props.title}</Text>
     </Box>
   )
 }
@@ -104,13 +106,19 @@ const HomePage = () => {
         <Text color='grey' size='2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
       </Section>
     
-      { /* Graph Section */ }
+      { /* Icon / Info Section */ }
       <Section class={styles.section}>
         <Box justifyContent='space-around' display='flex'>
-          <IconContainer icon={Money}>Market Cap</IconContainer>
-          <IconContainer icon={Drop}>Liquidity</IconContainer>
-          <IconContainer icon={Drop}></IconContainer>
+          <IconContainer icon={Money} title='Market Cap' info='6,969,420,420'/>
+          <IconContainer icon={Drop} title='Liquidity' info='$80,392'/>
+          <IconContainer icon={Vault}title='Supply' info='6,394,881,630'/>
         </Box>
+      </Section>
+
+      { /* Video Embed Section */ }
+      <Section class={styles.section}>
+        <div className={styles.videoContainer}>
+        </div>
       </Section>
 
       { /* Graph Section */ }
