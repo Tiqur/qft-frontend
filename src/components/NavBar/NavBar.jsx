@@ -7,6 +7,7 @@ import HamburgerMenu from 'react-hamburger-menu';
 import React, { useEffect, useState } from 'react';
 import usePortal from 'react-useportal';
 import Layout from '../Layout/Layout.jsx';
+import * as Scroll from 'react-scroll';
 
 
 const NavLink = (props) => {
@@ -39,6 +40,7 @@ const SideBar = (props) => {
 const NavBar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [scrollPos, setScrollPos] = useState(0);
+  const scroll = Scroll.animateScroll
   
   const scrollHandle = () => {
     if (window.innerWidth <= 899) {
