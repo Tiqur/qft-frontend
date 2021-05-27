@@ -63,8 +63,8 @@ const HomePage = () => {
               <Text color='#A9A9A9'>Queens</Text>
               <Text color='#A9A9A9'>United</Text>
               <Text color='#A9A9A9'>Educated</Text>
-              <Text color='#A9A9A9'>E</Text>
-              <Text color='#A9A9A9'>F</Text>
+              <Text color='#A9A9A9'>Empower</Text>
+              <Text color='#A9A9A9'>Fight</Text>
             </FadeIn>
           </div>
 
