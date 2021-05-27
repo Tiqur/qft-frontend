@@ -18,6 +18,7 @@ const Poof = (props) => {
   return (
     <Page>
         <Section class={styles.aboutContainer}>
+          <Text margin='0 0 0.5em 0'size='4'>WhitePaper:</Text>
           <Text color='grey'>
     QFT - a ridiculous & friendly meme token, designed to create an artist-promoter-fan network and functionality. Open to everyone (color, orientation, gender, belief, culture). Ultimately, it will become the driving force (asset) behind SOS. 
 Artists (musicians, performing artists, painters, sculptors, photographers, videographers, graphics designers, etc) who qualify (eligibility factors to be further established) can receive a certain amount of tokens, with which they can use to access events, services, deals, promotion, distribution, possibly even booking/touring support. A lot of the artist - promoter networking will happen within the Queef app/web ecosystem. 

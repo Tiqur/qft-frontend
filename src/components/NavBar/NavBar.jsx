@@ -11,16 +11,19 @@ import * as Scroll from 'react-scroll';
 
 
 const NavLink = (props) => {
+  const button = <Button 
+    p={1}
+    disableRipple
+    variant={props.outlined ? 'outlined' : 'text'} 
+    size={props.scrollPos == 0 ? 'large' : 'small'}
+    color='secondary'>{props.text}</Button>
+  
   return (
     <div className={styles.navLinkDiv}>
-      <Link to={{pathname: props.to}}>
-        <Button 
-          p={1}
-          disableRipple
-          variant={props.outlined ? 'outlined' : 'text'} 
-          size={props.scrollPos == 0 ? 'large' : 'small'}
-          color='secondary'>{props.text}</Button>
-      </Link>
+      { props.to.includes('http')
+      ?  <a target='_blank' href={props.to}>{button}</a>
+      :  <Link to={{pathname: props.to}}>{button}</Link>
+      }
     </div>
   )
 }
@@ -69,7 +72,7 @@ const NavBar = () => {
     <NavLink scrollPos={scrollPos} to='/' text='Home'/>
     <NavLink scrollPos={scrollPos} to='how-to-buy' text='How to buy'/>
     <NavLink scrollPos={scrollPos} to='#' text='About'/>
-    <NavLink scrollPos={scrollPos} to='#' text='Charts'/>
+    <NavLink scrollPos={scrollPos} to='https://poocoin.app/tokens/0xee40498eb660383722d7cc07b4bce40d9e51a13f' text='Charts'/>
     <NavLink scrollPos={scrollPos} to='#' text='Socials'/>
     <NavLink scrollPos={scrollPos} outlined to='/whitepaper' text='WhitePaper'/>
   </>

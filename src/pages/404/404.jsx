@@ -18,7 +18,7 @@ const Poof = (props) => {
     <Page>
         { /* Poof */ }
         <Section class={styles.aboutContainer}>
-          <Text size='20'>404</Text>
+          <Text size='15'>404</Text>
           <Text color='grey'>This page does not exist.</Text>
         </Section>
     </Page>
