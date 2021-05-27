@@ -13,6 +13,7 @@ import Button from '../../components/Button.jsx';
 import Layout from '../../components/Layout/Layout.jsx';
 import FadeIn from 'react-fade-in';
 import Clouds from '../../components/Clouds/Clouds.jsx';
+import Page from '../../components/Page/Page.jsx';
 
 
 const Section = (props) => {
@@ -41,9 +42,8 @@ const HomePage = () => {
   const [arrowState, setArrowState] = useState(false);
 
   return (
+    <Page>
     <div className={styles.mainContainer}>
-      <NavBar/>
-      <Clouds/>
 
 
       { /* Hero Container */ }     
@@ -92,9 +92,8 @@ const HomePage = () => {
       </Section>
 
 
-      { /* Footer Section */ }
-      <Footer />
     </div>
+    </Page>
   )
 }
 
