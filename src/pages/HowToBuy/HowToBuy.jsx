@@ -22,7 +22,6 @@ const HowToBuy = (props) => {
       
         { /* About Section */ }
         <Section class={styles.aboutContainer}>
-          <Text padding='0 0 1em 0'size='3'>How to buy QUEEF:</Text>
           <iframe width="693" height="390" src="https://www.youtube.com/embed/7w8LfmK62V8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </Section>
     </Page>
