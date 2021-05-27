@@ -79,7 +79,7 @@ const HomePage = () => {
       { /* About Section */ }
       <Section class={styles.aboutContainer}>
         <Text padding='0 0 0.3em 0'size='4'>About Queef Token:</Text>
-        <Text color='grey' size='2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+        <Text color='grey' size='2'>Queef (QFT) is a ridiculous & friendly meme token, designed to create an artist-promoter-fan network and functionality. Open to everyone (color, orientation, gender, belief, culture). Ultimately, it will become the driving force (asset) behind SOS. Artists (musicians, performing artists, painters, sculptors, photographers, videographers, graphics designers, etc) who qualify (eligibility factors to be further established) can receive a certain amount of tokens, with which they can use to access events, services, deals, promotion, distribution, possibly even booking/touring support. A lot of the artist - promoter networking will happen within the Queef app/web ecosystem. </Text>
       </Section>
     
       { /* Icon / Info Section */ }
