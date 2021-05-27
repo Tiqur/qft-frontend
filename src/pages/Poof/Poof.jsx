@@ -1,8 +1,7 @@
 import styles from './styles.module.css';
 import Layout from '../../components/Layout/Layout.jsx';
 import Page from '../../components/Page/Page.jsx';
-import Text from '../../components/Text/Text.jsx';
-
+import PoofGif from '../../assets/poof.gif';
 
 const Section = (props) => {
   return (
@@ -17,10 +16,9 @@ const Section = (props) => {
 const Poof = (props) => {
   return (
     <Page>
+        { /* Poof */ }
         <Section class={styles.aboutContainer}>
-          <p>
-
-          </p>
+          <img src={PoofGif}/>
         </Section>
     </Page>
   )
