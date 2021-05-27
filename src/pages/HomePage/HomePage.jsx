@@ -12,6 +12,7 @@ import Text from '../../components/Text/Text.jsx';
 import Button from '../../components/Button.jsx';
 import Layout from '../../components/Layout/Layout.jsx';
 import FadeIn from 'react-fade-in';
+import Clouds from '../../components/Clouds/Clouds.jsx';
 
 
 const Section = (props) => {
@@ -38,39 +39,12 @@ const IconContainer = (props) => {
 
 const HomePage = () => {
   const [arrowState, setArrowState] = useState(false);
-  
-  const clouds = <>
-      <div className={styles.x1}>
-          <div className={styles.cloud}></div>
-      </div>
-      <div className={styles.x2}>
-          <div className={styles.cloud}></div>
-      </div>
-      <div className={styles.x3}>
-          <div className={styles.cloud}></div>
-      </div>
-      <div className={styles.x4}>
-          <div className={styles.cloud}></div>
-      </div>
-      <div className={styles.x5}>
-          <div className={styles.cloud}></div>
-      </div>
-      <div className={styles.x6}>
-          <div className={styles.cloud}></div>
-      </div>
-      <div className={styles.x7}>
-          <div className={styles.cloud}></div>
-      </div>
-  </>
 
   return (
     <div className={styles.mainContainer}>
       <NavBar/>
+      <Clouds/>
 
-      { /* Clouds: https://codepen.io/Mark_Bowley/pen/xEbuI*/ }
-      <div className={styles.backgroundWrap}> 
-      {clouds}
-      </div>
 
       { /* Hero Container */ }     
       <Section class={styles.homeContainer}>

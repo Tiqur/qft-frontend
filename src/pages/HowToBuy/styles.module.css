@@ -1,8 +1,11 @@
-.container {
+.mainContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column
+}
+
+.section {
+  display: flex;
   align-items: center;
-  bottom: 0;
   justify-content: space-around;
   background: rgb(46, 46, 63, 0.7);
   text-align: center;
@@ -10,12 +13,3 @@
   margin-top: 40vh;
 }
 
-.logo {
-  height: 2em;
-  width: 2em;
-  margin: 0 1em 0 1em;
-}
-
-.iconButton {
-  background: red;
-}
