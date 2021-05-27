@@ -7,10 +7,12 @@ import { useState } from 'react';
 import { Box } from '@material-ui/core';
 import styles from './styles.module.css';
 import NavBar from '../../components/NavBar/NavBar.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 import Text from '../../components/Text/Text.jsx';
 import Button from '../../components/Button.jsx';
 import Layout from '../../components/Layout/Layout.jsx';
 import FadeIn from 'react-fade-in';
+
 
 const Section = (props) => {
   return (
@@ -110,16 +112,14 @@ const HomePage = () => {
       <Section class={styles.section}>
         <Box justifyContent='space-around' display='flex'>
           <IconContainer icon={Money} title='Market Cap' info='6,969,420,420'/>
-          <IconContainer icon={Drop} title='Liquidity' info='$80,392'/>
-          <IconContainer icon={Vault}title='Supply' info='6,394,881,630'/>
+          <IconContainer icon={Drop} title='Liquidity' info='$74,200'/>
+          <IconContainer icon={Vault}title='Supply' info='N/A'/>
         </Box>
       </Section>
 
 
-
       { /* Footer Section */ }
-      <Section class={styles.footerContainer}>
-      </Section>
+      <Footer />
     </div>
   )
 }
