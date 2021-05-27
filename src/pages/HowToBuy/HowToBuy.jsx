@@ -19,7 +19,7 @@ const HowToBuy = (props) => {
       
         { /* About Section */ }
         <Section class={styles.aboutContainer}>
-          <iframe width="693" height="390" src="https://www.youtube.com/embed/7w8LfmK62V8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="747" height="420" src="https://www.youtube.com/embed/72YYC879Yhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </Section>
     </Page>
   )

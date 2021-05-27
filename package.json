@@ -13,7 +13,6 @@
     "react-hamburger-menu": "^1.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "react-scroll": "^1.8.2",
     "react-useportal": "^1.0.14",
     "web-vitals": "^1.1.2"
   },

@@ -7,7 +7,6 @@ import HamburgerMenu from 'react-hamburger-menu';
 import React, { useEffect, useState } from 'react';
 import usePortal from 'react-useportal';
 import Layout from '../Layout/Layout.jsx';
-import * as Scroll from 'react-scroll';
 
 
 const NavLink = (props) => {
@@ -43,7 +42,6 @@ const SideBar = (props) => {
 const NavBar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [scrollPos, setScrollPos] = useState(0);
-  const scroll = Scroll.animateScroll
   
   const scrollHandle = () => {
     if (window.innerWidth <= 899) {
@@ -71,7 +69,6 @@ const NavBar = () => {
   const links = <>
     <NavLink scrollPos={scrollPos} to='/' text='Home'/>
     <NavLink scrollPos={scrollPos} to='how-to-buy' text='How to buy'/>
-    <NavLink scrollPos={scrollPos} to='#' text='About'/>
     <NavLink scrollPos={scrollPos} to='https://poocoin.app/tokens/0xee40498eb660383722d7cc07b4bce40d9e51a13f' text='Charts'/>
     <NavLink scrollPos={scrollPos} to='#' text='Socials'/>
     <NavLink scrollPos={scrollPos} outlined to='/whitepaper' text='WhitePaper'/>

@@ -10,7 +10,7 @@ const Text = (props) => {
       fontFamily: props.family ? props.family : 'Roboto',
       padding: props.padding ? props.padding : 'initial',
       margin: props.margin ? props.margin : 'initial'
-    }}children={props.children}/>
+    }}children={props.children} id={props.id}/>
   )
 }
 
