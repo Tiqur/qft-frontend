@@ -61,8 +61,8 @@ const HomePage = () => {
           <div style={{display: arrowState ? 'initial' : 'none'}}>
             <FadeIn visible={arrowState}>
               <Text color='#A9A9A9'>Queens</Text>
-              <Text color='#A9A9A9'>United</Text>
-              <Text color='#A9A9A9'>Educated</Text>
+              <Text color='#A9A9A9'>Unite</Text>
+              <Text color='#A9A9A9'>Educate</Text>
               <Text color='#A9A9A9'>Empower</Text>
               <Text color='#A9A9A9'>Fight</Text>
             </FadeIn>

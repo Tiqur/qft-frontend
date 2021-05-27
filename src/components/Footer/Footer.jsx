@@ -3,6 +3,8 @@ import { ReactComponent as RedditLogo } from '../../assets/reddit.svg';
 import { ReactComponent as TwitterLogo } from '../../assets/twitter.svg';
 import { ReactComponent as InstaLogo } from '../../assets/instagram.svg';
 import { ReactComponent as TelegramLogo } from '../../assets/telegram.svg';
+import { ReactComponent as BearIcon } from '../../assets/bear.svg';
+import { Link } from 'react-router-dom';
 import { Box } from '@material-ui/core';
 import styles from './styles.module.css';
 import Text from '../Text/Text.jsx';
@@ -29,6 +31,12 @@ const Footer = (props) => {
         <Icon href='https://twitter.com/Queef_Token' icon={TwitterLogo}/>
         <Icon href='https://instagram.com/queeftoken?r=nametag' icon={InstaLogo}/>
         <Icon href='https://t.me/joinchat/arOJyaFFu3VjZjUx' icon={TelegramLogo}/>
+        
+        <IconButton className={props.iconButton}>
+          <Link to='/poof'>
+            {<BearIcon fill='#6C6C89' className={styles.logo}/>}
+          </Link>
+        </IconButton>
       </Box>
       <Box display='flex' mt='1em' flexDirection='column'>
         <Text color='grey'>Terms of Service</Text>
