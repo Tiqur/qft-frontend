@@ -85,7 +85,7 @@ const HomePage = () => {
       { /* Icon / Info Section */ }
       <Section class={styles.section}>
         <Box justifyContent='space-around' display='flex'>
-          <IconContainer icon={Money} title='Market Cap' info='6,969,420,420'/>
+          <IconContainer icon={Money} title='Market Cap' info='69,696,420,420'/>
           <IconContainer icon={Drop} title='Liquidity' info='$74,200'/>
           <IconContainer icon={Vault}title='Supply' info='N/A'/>
         </Box>

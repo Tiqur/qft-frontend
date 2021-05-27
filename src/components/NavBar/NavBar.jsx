@@ -64,7 +64,8 @@ const NavBar = () => {
 
 
   const links = <>
-    <NavLink scrollPos={scrollPos} to='#' text='How to buy'/>
+    <NavLink scrollPos={scrollPos} to='/' text='Home'/>
+    <NavLink scrollPos={scrollPos} to='how-to-buy' text='How to buy'/>
     <NavLink scrollPos={scrollPos} to='#' text='About'/>
     <NavLink scrollPos={scrollPos} to='#' text='Charts'/>
     <NavLink scrollPos={scrollPos} to='#' text='Telegram'/>
