@@ -53,3 +53,21 @@
   width: 100%;
 }
 
+/* Icons Container */
+.iconContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Media Queries */
+@media(max-width: 899px) {
+  .iconContainer {
+    flex-direction: column;
+  }
+  .iconContainer div {
+    margin-bottom: 4em;
+  }
+}
+
+
+
