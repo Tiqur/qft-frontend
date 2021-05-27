@@ -10,6 +10,12 @@
   margin-top: 40vh;
 }
 
+.iconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .logo {
   height: 2em;
   width: 2em;

@@ -60,7 +60,7 @@
 }
 
 /* Media Queries */
-@media(max-width: 899px) {
+@media(max-width: 700px) {
   .iconContainer {
     flex-direction: column;
   }

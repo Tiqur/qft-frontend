@@ -25,7 +25,7 @@ const Icon = (props) => {
 const Footer = (props) => {
   return (
     <div className={styles.container}>
-      <Box display='flex'>
+      <div className={styles.iconContainer}>
         <Icon href='https://discord.gg/ns3NqzK2qy' icon={DiscordLogo}/>
         <Icon href='https://www.reddit.com/r/Queef_Token/' icon={RedditLogo}/>
         <Icon href='https://twitter.com/Queef_Token' icon={TwitterLogo}/>
@@ -37,7 +37,7 @@ const Footer = (props) => {
             {<BearIcon fill='#6C6C89' className={styles.logo}/>}
           </Link>
         </IconButton>
-      </Box>
+      </div>
       <Box display='flex' mt='1em' flexDirection='column'>
         <Text color='grey'>Terms of Service</Text>
         <Text color='grey'>Privacy Policy</Text>
