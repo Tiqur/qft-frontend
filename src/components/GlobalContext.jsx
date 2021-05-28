@@ -13,6 +13,11 @@ const GlobalProvider = (props) => {
   useEffect(() => {
     ws.onmessage = (msg) => {
       const data = JSON.parse(msg.data);
+      setPrice(data.price);
+      setChange24h(data.change);
+      setVolume24h(data.volume);
+      setLiquidity(data.liquidity);
+      setMarketcap(data.marketcap);
       console.log(data)
     }
   })
