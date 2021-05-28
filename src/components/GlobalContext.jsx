@@ -1,5 +1,6 @@
-import { useState, createContext } from 'react';
-
+import { useState, createContext, useEffect } from 'react';
+import { w3cwebsocket as W3WebSocket } from 'websocket';
+const ws = new W3WebSocket('ws://127.0.0.1:3001');
 const GlobalContext = createContext();
 
 const GlobalProvider = (props) => {
@@ -8,6 +9,13 @@ const GlobalProvider = (props) => {
   const [volume24h, setVolume24h] = useState(0);
   const [liquidity, setLiquidity] = useState(0);
   const [marketcap, setMarketcap] = useState(0);
+
+  useEffect(() => {
+    ws.onmessage = (msg) => {
+      const data = JSON.parse(msg.data);
+      console.log(data)
+    }
+  })
 
   return (
     <GlobalContext.Provider value={{priceState: [price, setPrice], changeState: [change24h, setChange24h], volumeState: [volume24h, setVolume24h], liquidityState: [liquidity, setLiquidity], marketcapState: [marketcap, setMarketcap]}}>

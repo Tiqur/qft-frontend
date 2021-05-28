@@ -2,7 +2,8 @@ import { ReactComponent as Arrow } from '../../assets/arrow.svg';
 import { ReactComponent as Money } from '../../assets/money.svg';
 import { ReactComponent as Drop } from '../../assets/drop.svg';
 import { ReactComponent as Vault } from '../../assets/vault.svg';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { GlobalContext } from '../../components/GlobalContext.jsx';
 import styles from './styles.module.css';
 
 import NavBar from '../../components/NavBar/NavBar.jsx';
@@ -41,6 +42,10 @@ const IconContainer = (props) => {
 
 const HomePage = () => {
   const [arrowState, setArrowState] = useState(false);
+  const { marketcapState, liquidityState } = useContext(GlobalContext);
+  const [marketcap, setMarketcap] = marketcapState;
+  const [liquidity, setLiquidity] = liquidityState;
+
 
   return (
     <Page>
@@ -86,8 +91,8 @@ const HomePage = () => {
       { /* Icon / Info Section */ }
       <Section class={styles.section}>
         <div className={styles.iconContainer}>
-          <IconContainer icon={Money} title='Market Cap' info='69,696,420,420'/>
-          <IconContainer icon={Drop} title='Liquidity' info='$74,200'/>
+          <IconContainer icon={Money} title='Market Cap' info={marketcap}/>
+          <IconContainer icon={Drop} title='Liquidity' info={liquidity}/>
           <IconContainer icon={Vault} title='Supply' info='N/A'/>
         </div>
       </Section>
