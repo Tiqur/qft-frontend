@@ -2,10 +2,9 @@ import { ReactComponent as Arrow } from '../../assets/arrow.svg';
 import { ReactComponent as Money } from '../../assets/money.svg';
 import { ReactComponent as Drop } from '../../assets/drop.svg';
 import { ReactComponent as Vault } from '../../assets/vault.svg';
-import { makeStyles } from '@material-ui/core/styles';
 import { useState } from 'react';
-import { Box } from '@material-ui/core';
 import styles from './styles.module.css';
+
 import NavBar from '../../components/NavBar/NavBar.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import Text from '../../components/Text/Text.jsx';
@@ -15,6 +14,8 @@ import FadeIn from 'react-fade-in';
 import Clouds from '../../components/Clouds/Clouds.jsx';
 import Page from '../../components/Page/Page.jsx';
 
+import { Box } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 
 const Section = (props) => {
   return (
@@ -90,7 +91,6 @@ const HomePage = () => {
           <IconContainer icon={Vault} title='Supply' info='N/A'/>
         </div>
       </Section>
-
 
     </div>
     </Page>

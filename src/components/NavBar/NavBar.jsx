@@ -4,9 +4,10 @@ import logo from '../../assets/queef.jpg';
 import Text from '../Text/Text.jsx';
 import { Link } from 'react-router-dom';
 import HamburgerMenu from 'react-hamburger-menu';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import usePortal from 'react-useportal';
 import Layout from '../Layout/Layout.jsx';
+import { GlobalContext } from '../../components/GlobalContext.jsx';
 
 
 const NavLink = (props) => {
@@ -40,6 +41,9 @@ const SideBar = (props) => {
 }
 
 const NavBar = () => {
+  const { priceState, changeState } = useContext(GlobalContext);
+  const [price, setPrice] = priceState;
+  const [change, setChange] = changeState;
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [scrollPos, setScrollPos] = useState(0);
   
@@ -93,8 +97,8 @@ const NavBar = () => {
         <div className={styles.content}>
           <div className={styles.ticker}>
             <Text>Current Price:</Text>
-            <Text size='1.2' color='grey'>N/A</Text>
-            <Text size='1.2' color='green'>+0.0%</Text>
+            <Text margin='0 0 0 0.4em' size='1.2' color='grey'>{price}</Text>
+            <Text margin='0 0 0 0.4em' size='1.2' color='green'>{change}%</Text>
           </div>
    
 

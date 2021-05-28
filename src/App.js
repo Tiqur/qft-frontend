@@ -6,19 +6,23 @@ import Poof from './pages/Poof/Poof.jsx';
 import WhitePaper from './pages/WhitePaper/WhitePaper.jsx';
 import F0F from './pages/404/404.jsx';
 import theme from './components/Theme';
+import { GlobalProvider } from './components/GlobalContext.jsx';
+
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <Switch>
-          <Route exact path='/' component={HomePage}/>
-          <Route exact path='/how-to-buy' component={HowToBuy}/>
-          <Route exact path='/whitepaper' component={WhitePaper}/>
-          <Route exact path='/poof' component={Poof}/>
-          <Route component={F0F}/>
-        </Switch>
-      </BrowserRouter>
+      <GlobalProvider>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path='/' component={HomePage}/>
+            <Route exact path='/how-to-buy' component={HowToBuy}/>
+            <Route exact path='/whitepaper' component={WhitePaper}/>
+            <Route exact path='/poof' component={Poof}/>
+            <Route component={F0F}/>
+          </Switch>
+        </BrowserRouter>
+      </GlobalProvider>
     </ThemeProvider>
   );
 }

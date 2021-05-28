@@ -42,10 +42,6 @@
   margin-left: 2em;
 }
 
-.ticker * {
-  margin-right: 0.4em;
-}
-
 .content {
   display: flex;
   justify-content: space-between;
