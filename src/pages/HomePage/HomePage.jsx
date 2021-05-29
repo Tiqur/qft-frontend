@@ -5,6 +5,7 @@ import { ReactComponent as Vault } from '../../assets/vault.svg';
 import { useState, useContext } from 'react';
 import { GlobalContext } from '../../components/GlobalContext.jsx';
 import styles from './styles.module.css';
+import { Link } from 'react-router-dom';
 
 import NavBar from '../../components/NavBar/NavBar.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
@@ -75,8 +76,12 @@ const HomePage = () => {
           </div>
 
           <Box mt={2} display='flex' flexDirection="row">
-            <Button disableRipple color='secondary' variant='outlined'>View Charts</Button>
-            <Button disableRipple ml={2} color='primary' variant='contained'>Buy Now</Button>
+            <a target='_blank' href='https://charts.bogged.finance/?token=0xEE40498EB660383722d7CC07b4bcE40d9E51A13F'>
+              <Button disableRipple color='secondary' variant='outlined'>View Charts</Button>
+            </a>
+            <a target='_blank' href='https://exchange.pancakeswap.finance/#/swap'>
+              <Button disableRipple ml={2} color='primary' variant='contained'>Buy Now</Button>
+            </a>
           </Box>
         </div>
       </Section>
