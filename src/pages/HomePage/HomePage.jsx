@@ -90,7 +90,14 @@ const HomePage = () => {
       { /* About Section */ }
       <Section class={styles.aboutContainer}>
         <Text padding='0 0 0.3em 0'size='4' id="About">About Queef Token:</Text>
-        <Text color='grey' size='2'>Queef (QFT) is a ridiculous & friendly meme token, designed to create an artist-promoter-fan network and functionality. Open to everyone (color, orientation, gender, belief, culture). Ultimately, it will become the driving force (asset) behind SOS. Artists (musicians, performing artists, painters, sculptors, photographers, videographers, graphics designers, etc) who qualify (eligibility factors to be further established) can receive a certain amount of tokens, with which they can use to access events, services, deals, promotion, distribution, possibly even booking/touring support. A lot of the artist - promoter networking will happen within the Queef app/web ecosystem. </Text>
+        <Text color='grey' size='2'>
+          QFT is a ridiculous & friendly meme token that isn't afraid to aim high. It is being developed with multiple goals in mind. In its initial phase it will be incorporated into a direct artist-fan network and market place that will bring millions of artists and fans into the crypto world.
+          In its next step it will become the driving force behind the SOST platform which is being developed to provide financial assistance to service members, veterans, EMTs, peace officers and firefighters who are struggling accessing quality healthcare.
+          QFT is open to everyone, regardless of their color, orientation, gender, background or belief.
+          Everybody knows that nowadays artists get pennies on the dollar when they put their art on places like iTunes & Spotify. 
+          Every single day veterans who have sacrificed so much for us end up on the streets, not being able to access to the quality care they need.
+          QFT aims to take on such big issues and change the world in a very meaningful way.
+        </Text>
       </Section>
     
       { /* Icon / Info Section */ }
