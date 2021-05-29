@@ -1,6 +1,6 @@
 import { useState, createContext, useEffect } from 'react';
 import { w3cwebsocket as W3WebSocket } from 'websocket';
-const ws = new W3WebSocket('ws://127.0.0.1:3001');
+const ws = new W3WebSocket('ws://45.32.80.143:3001');
 const GlobalContext = createContext();
 
 const GlobalProvider = (props) => {
