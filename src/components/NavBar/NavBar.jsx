@@ -21,8 +21,8 @@ const NavLink = (props) => {
   return (
     <div className={styles.navLinkDiv}>
       { props.to.includes('http')
-      ?  <a target='_blank' href={props.to}>{button}</a>
-      :  <Link to={{pathname: props.to}}>{button}</Link>
+      ?  <a style={{ textDecoration: 'none' }} target='_blank' href={props.to}>{button}</a>
+      :  <Link style={{ textDecoration: 'none' }} to={{pathname: props.to}}>{button}</Link>
       }
     </div>
   )
