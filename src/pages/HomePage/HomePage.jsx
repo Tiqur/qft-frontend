@@ -63,6 +63,7 @@ const HomePage = () => {
           }} onClick={() => {
             setArrowState(!arrowState);
           }}/>}</Text>
+
       
           { /* Fade in Acronym */ }
           <div style={{display: arrowState ? 'initial' : 'none'}}>

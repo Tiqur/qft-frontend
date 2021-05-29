@@ -1,0 +1,27 @@
+import styles from './styles.module.css';
+import Layout from '../../components/Layout/Layout.jsx';
+import Page from '../../components/Page/Page.jsx';
+import PoofGif from '../../assets/poof.gif';
+
+const Section = (props) => {
+  return (
+    <div className={props.class}>
+      <Layout>
+        {props.children}
+      </Layout>
+    </div>
+  )
+}
+
+const Poof = (props) => {
+  return (
+    <Page>
+        { /* Poof */ }
+        <Section class={styles.aboutContainer}>
+      <iframe scrolling='no' height='1000' width='100%' src='https://poocoin.app/tokens/0xee40498eb660383722d7cc07b4bce40d9e51a13f/#layout-size-sensor'/>
+        </Section>
+    </Page>
+  )
+}
+
+export default Poof;
