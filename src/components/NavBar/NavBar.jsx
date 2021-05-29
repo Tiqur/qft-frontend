@@ -73,7 +73,7 @@ const NavBar = () => {
   const links = <>
     <NavLink scrollPos={scrollPos} to='/' text='Home'/>
     <NavLink scrollPos={scrollPos} to='how-to-buy' text='How to buy'/>
-    <NavLink scrollPos={scrollPos} to='https://poocoin.app/tokens/0xee40498eb660383722d7cc07b4bce40d9e51a13f' text='Charts'/>
+    <NavLink scrollPos={scrollPos} to='https://charts.bogged.finance/?token=0xEE40498EB660383722d7CC07b4bcE40d9E51A13F' text='Charts'/>
     <NavLink scrollPos={scrollPos} to='#' text='Socials'/>
     <NavLink scrollPos={scrollPos} outlined to='/whitepaper' text='WhitePaper'/>
   </>

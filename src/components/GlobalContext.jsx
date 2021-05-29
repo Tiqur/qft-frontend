@@ -18,7 +18,6 @@ const GlobalProvider = (props) => {
       setVolume24h(data.volume);
       setLiquidity(data.liquidity);
       setMarketcap(data.marketcap);
-      console.log(data)
     }
   })
 
