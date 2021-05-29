@@ -11,6 +11,14 @@ const GlobalProvider = (props) => {
   const [marketcap, setMarketcap] = useState(0);
 
   useEffect(() => {
+    ws.onopen = () => {
+      console.log("Open")
+      ws.send(JSON.stringify({
+        type: 'message',
+        msg: 'connect'
+      }))
+    }
+
     ws.onmessage = (msg) => {
       const data = JSON.parse(msg.data);
       setPrice(data.price);
