@@ -7,6 +7,7 @@ import Charts from './pages/Charts/Charts.jsx';
 import WhitePaper from './pages/WhitePaper/WhitePaper.jsx';
 import F0F from './pages/404/404.jsx';
 import Tos from './pages/Tos/Tos.jsx';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy.jsx';
 import theme from './components/Theme';
 import { GlobalProvider } from './components/GlobalContext.jsx';
 
@@ -23,6 +24,7 @@ function App() {
             <Route exact path='/poof' component={Poof}/>
             <Route exact path='/charts' component={Charts}/>
             <Route exact path='/terms-of-service' component={Tos}/>
+            <Route exact path='/privacy-policy' component={Tos}/>
             <Route component={F0F}/>
           </Switch>
         </BrowserRouter>
