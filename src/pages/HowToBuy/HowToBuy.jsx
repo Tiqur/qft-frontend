@@ -2,16 +2,7 @@ import styles from './styles.module.css';
 import Layout from '../../components/Layout/Layout.jsx';
 import Clouds from '../../components/Clouds/Clouds.jsx';
 import Page from '../../components/Page/Page.jsx';
-
-const Section = (props) => {
-  return (
-    <div className={props.class}>
-      <Layout>
-        {props.children}
-      </Layout>
-    </div>
-  )
-}
+import Section from '../../components/Section/Section.jsx';
 
 const HowToBuy = (props) => {
   return (

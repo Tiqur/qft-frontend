@@ -15,19 +15,11 @@ import Layout from '../../components/Layout/Layout.jsx';
 import FadeIn from 'react-fade-in';
 import Clouds from '../../components/Clouds/Clouds.jsx';
 import Page from '../../components/Page/Page.jsx';
+import Section from '../../components/Section/Section.jsx';
 
 import { Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-const Section = (props) => {
-  return (
-    <div className={props.class}>
-      <Layout>
-        {props.children}
-      </Layout>
-    </div>
-  )
-}
 
 
 const IconContainer = (props) => {
