@@ -69,17 +69,17 @@ const HomePage = () => {
           <div style={{display: arrowState ? 'initial' : 'none'}}>
             <FadeIn visible={arrowState}>
               <Text color='#A9A9A9'>Queens</Text>
-              <Text color='#A9A9A9'>Unite</Text>
+              <Text color='#A9A9A9'>Uplift</Text>
+              <Text color='#A9A9A9'>Embrace</Text>
               <Text color='#A9A9A9'>Educate</Text>
-              <Text color='#A9A9A9'>Empower</Text>
               <Text color='#A9A9A9'>Fight</Text>
             </FadeIn>
           </div>
 
           <Box mt={2} display='flex' flexDirection="row">
-            <a style={{ textDecoration: 'none' }} target='_blank' href='https://charts.bogged.finance/?token=0xEE40498EB660383722d7CC07b4bcE40d9E51A13F'>
+            <Link to='charts'>
               <Button disableRipple color='secondary' variant='outlined'>View Charts</Button>
-            </a>
+            </Link>
             <a style={{ textDecoration: 'none' }} target='_blank' href='https://exchange.pancakeswap.finance/#/swap'>
               <Button disableRipple ml={2} color='primary' variant='contained'>Buy Now</Button>
             </a>
