@@ -42,7 +42,7 @@ const IconContainer = (props) => {
 
 
 const HomePage = () => {
-  const [arrowState, setArrowState] = useState(false);
+  const [arrowState, setArrowState] = useState(true);
   const { marketcapState, liquidityState } = useContext(GlobalContext);
   const [marketcap, setMarketcap] = marketcapState;
   const [liquidity, setLiquidity] = liquidityState;
@@ -92,7 +92,7 @@ const HomePage = () => {
       <Section class={styles.aboutContainer}>
         <Text padding='0 0 0.3em 0'size='4' id="About">About Queef Token:</Text>
         <Text color='grey' size='2'>
-          QFT is a ridiculous & friendly meme token that isn't afraid to aim high. It is being developed with multiple goals in mind. In its initial phase it will be incorporated into a direct artist-fan-vendor network and market place that will bring millions of artists and fans into the crypto world.
+          QFT is a token that isn't afraid to aim high. It is being developed with multiple goals in mind. In its initial phase it will be incorporated into a direct artist-fan-vendor network and market place that will bring millions of artists and fans into the crypto world.
         </Text>
         <br/>
         <Text color='grey' size='2'>
