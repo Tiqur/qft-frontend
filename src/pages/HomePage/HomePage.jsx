@@ -105,7 +105,7 @@ const HomePage = () => {
         <div className={styles.iconContainer}>
           <IconContainer icon={Money} title='Market Cap' info={marketcap}/>
           <IconContainer icon={Drop} title='Liquidity' info={liquidity}/>
-          <IconContainer icon={Vault} title='Supply' info='N/A'/>
+          <IconContainer icon={Vault} title='Supply' info='69,696,420,420'/>
         </div>
       </Section>
 

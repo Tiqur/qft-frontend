@@ -10,7 +10,7 @@ const Charts = (props) => {
     <Page>
         { /* Charts */ }
         <Section class={styles.aboutContainer}>
-          <Text>Coming soon!</Text>
+          <Text>Coming soon...</Text>
         </Section>
     </Page>
   )
