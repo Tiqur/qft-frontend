@@ -79,7 +79,7 @@
 /* OBJECTS */
 
 .cloud {
-  background: #393949;
+  background: #43435C;
 	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
 	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
@@ -102,7 +102,7 @@
 }
 
 .cloud:after, .cloud:before {
-  background: #393949;
+  background: #43435C;
 	content: '';
 	position: absolute;
 	z-indeX: -1;
