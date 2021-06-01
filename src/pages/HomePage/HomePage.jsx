@@ -17,6 +17,14 @@ import Clouds from '../../components/Clouds/Clouds.jsx';
 import Page from '../../components/Page/Page.jsx';
 import Section from '../../components/Section/Section.jsx';
 
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
+import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
+
 import { Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -109,6 +117,49 @@ const HomePage = () => {
         </div>
       </Section>
 
+    { /* RoadMap */ }
+    { /*
+
+    <Section class={styles.section}>
+      <Timeline>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            <Text>Quarter 1</Text>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Text>Stuff</Text>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            <Text>Quarter 2</Text>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Text>Stuff</Text>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+            <Text>Quarter 3</Text>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Text>Stuff</Text>
+          </TimelineContent>
+        </TimelineItem>
+      </Timeline>
+    </Section>
+      */ }
     </div>
     </Page>
   )
