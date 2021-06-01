@@ -69,7 +69,7 @@ const HomePage = () => {
           </div>
 
           <Box mt={2} display='flex' flexDirection="row">
-            <a href='https://charts.bogged.finance/?token=0xEE40498EB660383722d7CC07b4bcE40d9E51A13F'>
+            <a target='_blank' href='https://charts.bogged.finance/?token=0xEE40498EB660383722d7CC07b4bcE40d9E51A13F'>
               <Button disableRipple color='secondary' variant='outlined'>View Charts</Button>
             </a>
             <a style={{ textDecoration: 'none' }} target='_blank' href='https://exchange.pancakeswap.finance/#/swap'>
