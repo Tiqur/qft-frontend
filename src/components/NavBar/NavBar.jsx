@@ -99,7 +99,7 @@ const NavBar = () => {
           <div className={styles.ticker}>
             <Text>Current Price:</Text>
             <Text margin='0 0 0 0.4em' size='1.4' color='grey'>{price}</Text>
-            <Text margin='0 0 0 0.4em' size='1.4' color='#A32A25'>{change}</Text>
+            <Text margin='0 0 0 0.4em' size='1.4' color={change.includes('-') ? '#A32A25' : '#319829'}>{change}</Text>
           </div>
    
 

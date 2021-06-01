@@ -5,10 +5,10 @@ const GlobalContext = createContext();
 
 const GlobalProvider = (props) => {
   const [price, setPrice] = useState(0);
-  const [change24h, setChange24h] = useState(0);
-  const [volume24h, setVolume24h] = useState(0);
-  const [liquidity, setLiquidity] = useState(0);
-  const [marketcap, setMarketcap] = useState(0);
+  const [change24h, setChange24h] = useState('0');
+  const [volume24h, setVolume24h] = useState('0');
+  const [liquidity, setLiquidity] = useState('0');
+  const [marketcap, setMarketcap] = useState('0');
 
   useEffect(() => {
     ws.onopen = () => {
