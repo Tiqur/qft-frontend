@@ -1,2 +1,2 @@
-nohup HTTPS=true PORT=80 serve -s build > /dev/null &
+HTTPS=true PORT=80 nohup serve -s build > /dev/null &
 
