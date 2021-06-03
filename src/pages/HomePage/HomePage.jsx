@@ -118,48 +118,80 @@ const HomePage = () => {
       </Section>
 
     { /* RoadMap */ }
-    { /*
-
     <Section class={styles.section}>
       <Timeline>
+
         <TimelineItem>
           <TimelineOppositeContent>
-            <Text>Quarter 1</Text>
+            <Text size='2'>Q2 2021</Text>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Text>Stuff</Text>
+            <Text>Telegram Launched</Text>
+            <Text>Instagram Launched</Text>
+            <Text>Tik Tok Launched</Text>
+            <Text>Partnered w/ Only Fans Model: Crypto Nova</Text>
+            <Text>Whitepaper Published</Text>
+            <Text>Partnered w/ Recording Co.: The Lazy Cocoon </Text>
+            <Text>Partnered w/ Jewelry Store: Smokey Mountain Diamonds</Text>
+            <Text>Launch Token</Text>
+            <Text>Copyright in Processing</Text>
+            <Text>Website Launched</Text>
+            <Text>Marketing Team Hired</Text>
+            <Text>Passed Soft Audit/ Added to rugfreecoins.com</Text>
           </TimelineContent>
         </TimelineItem>
+
         <TimelineItem>
           <TimelineOppositeContent>
-            <Text>Quarter 2</Text>
+            <Text size='2'>Q3 2021</Text>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Text>Stuff</Text>
+            <Text>Finish Website</Text>
+            <Text>YouTube Channel Launched</Text>
+            <Text>Design Limited edition Merch</Text>
+            <Text>CoinGecko / other listings</Text>
+            <Text>Have 1500 holders</Text>
           </TimelineContent>
         </TimelineItem>
+
         <TimelineItem>
           <TimelineOppositeContent>
-            <Text>Quarter 3</Text>
+            <Text size='2'>Q4 2021</Text>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            <Text>Have 2000 holders</Text>
+            <Text>Trademark Registered</Text>
+            <Text>Merch Store ( 10% Revenue to charity )</Text>
+          </TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+          <TimelineOppositeContent>
+            <Text size='2'>Q1 2022</Text>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
           </TimelineSeparator>
           <TimelineContent>
-            <Text>Stuff</Text>
+            <Text>Aligned with Charity</Text>
+            <Text>Aligned with 1st responders</Text>
+            <Text>Aligned with prominant artists around the world</Text>
           </TimelineContent>
         </TimelineItem>
       </Timeline>
     </Section>
-      */ }
     </div>
     </Page>
   )
