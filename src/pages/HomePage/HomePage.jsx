@@ -86,7 +86,6 @@ const HomePage = () => {
           </Box>
         </div>
       </Section>
-      
 
       { /* About Section */ }
       <Section class={styles.aboutContainer}>
@@ -130,18 +129,17 @@ const HomePage = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Text>Telegram Launched</Text>
-            <Text>Instagram Launched</Text>
-            <Text>Tik Tok Launched</Text>
+            <Text>Telegram, Instagram, Tik Tok Launched</Text>
             <Text>Partnered w/ Only Fans Model: Crypto Nova</Text>
-            <Text>Whitepaper Published</Text>
-            <Text>Partnered w/ Recording Co.: The Lazy Cocoon </Text>
+            <Text>Partnered w/ Recording Co.: The Lazy Cocoon</Text>
             <Text>Partnered w/ Jewelry Store: Smokey Mountain Diamonds</Text>
-            <Text>Launch Token</Text>
-            <Text>Copyright in Processing</Text>
+            <Text>Whitepaper Published</Text>
+            <Text>Applied Copyright and Trademark</Text>
+            <Text>QFT Token Launched</Text>
             <Text>Website Launched</Text>
             <Text>Marketing Team Hired</Text>
             <Text>Passed Soft Audit/ Added to rugfreecoins.com</Text>
+            <Text>The team and community is expanding and continues to grow</Text>
           </TimelineContent>
         </TimelineItem>
 
@@ -154,11 +152,14 @@ const HomePage = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Text>Finish Website</Text>
+            <Text>Pass Official Audit</Text>
+            <Text>Continue building Website and Database</Text>
+            <Text>Increase number of partnerships and participating vendors</Text>
+            <Text>Commence pre-production on mobile app development (hybrid app)</Text>
             <Text>YouTube Channel Launched</Text>
-            <Text>Design Limited edition Merch</Text>
-            <Text>CoinGecko / other listings</Text>
-            <Text>Have 1500 holders</Text>
+            <Text>Design Limited edition Merchandise</Text>
+            <Text>Coingeiko/ other listings </Text>
+            <Text>Have 1500+ holders</Text>
           </TimelineContent>
         </TimelineItem>
 
@@ -171,9 +172,11 @@ const HomePage = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Text>Have 2000 holders</Text>
+            <Text>Partnerships with more businesses</Text>
+            <Text>Have 2000+ holders</Text>
             <Text>Trademark Registered</Text>
-            <Text>Merch Store ( 10% Revenue to charity )</Text>
+            <Text>Merch Store to support our operating expenses (10% Revenue to Charity)</Text>
+            <Text>Commence Mobile App development</Text>
           </TimelineContent>
         </TimelineItem>
 
@@ -185,9 +188,11 @@ const HomePage = () => {
             <TimelineDot />
           </TimelineSeparator>
           <TimelineContent>
-            <Text>Aligned with Charity</Text>
-            <Text>Aligned with 1st responders</Text>
-            <Text>Aligned with prominant artists around the world</Text>
+            <Text>Aligned with even more Charities and Vendors</Text>
+            <Text>Aligned with 1st Responders</Text>
+            <Text>Aligned with prominent artists around the world</Text>
+            <Text>Continued Mobile App Development and Beta Testing</Text>
+            <Text>Continued Database construction and enhancement</Text>
           </TimelineContent>
         </TimelineItem>
       </Timeline>
