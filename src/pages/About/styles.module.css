@@ -1,0 +1,9 @@
+/* About Container */
+.aboutContainer {
+  margin-top: 10em;
+  width: 100%;
+  padding: 4em 0 4em 0;
+  background: rgb(56, 56, 73, 0.7);
+  text-align: center;
+}
+
