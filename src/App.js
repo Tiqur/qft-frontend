@@ -3,7 +3,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import HomePage from './pages/HomePage/HomePage.jsx';
 import HowToBuy from './pages/HowToBuy/HowToBuy.jsx';
 import About from './pages/About/About.jsx';
-import OurTeam from './pages/OurTeam/OurTeam.jsx';
+import Developer from './pages/Developer/Developer.jsx';
 import Poof from './pages/Poof/Poof.jsx';
 import BuyNow from './pages/BuyNow/BuyNow.jsx';
 import WhitePaper from './pages/WhitePaper/WhitePaper.jsx';
@@ -28,7 +28,7 @@ function App() {
             <Route exact path='/terms-of-service' component={Tos}/>
             <Route exact path='/privacy-policy' component={Tos}/>
             <Route exact path='/about' component={About}/>
-            <Route exact path='/our-team' component={OurTeam}/>
+            <Route exact path='/about-me' component={Developer}/>
             <Route component={F0F}/>
           </Switch>
         </BrowserRouter>
